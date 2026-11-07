@@ -17,14 +17,14 @@
 
 ## Overview
 
-**HIDA** (Human-Inspired Dynamic Awareness Architecture) is an agent system that transitions states based on prediction errors.
+**HIDA** (Human-Inspired Dynamic Architecture) is an agent system that transitions states based on prediction errors.
 
 A 5-layer network calculates prediction errors, and when the error exceeds a threshold, "consciousness mode" (full-layer coordination) activates. Several behaviors emerged that were not explicitly programmed.
 
 The name comes from Hida, Gifu Prefecture, Japan — the hometown of the creator.
 
 ```
-HIDA = Human-Inspired Dynamic Awareness Architecture
+HIDA = Human-Inspired Dynamic Architecture
 
 Human-Inspired  : Design based on human cognitive structure
 Dynamic         : Processing mode switches based on prediction error
@@ -215,7 +215,7 @@ MIT License
 ```bibtex
 @software{tomato2025hida,
   author = {Tomato and Claude (Anthropic) and GPT (OpenAI) and Gemini (Google DeepMind)},
-  title = {HIDA Architecture: Human-Inspired Dynamic Awareness Architecture},
+  title = {HIDA Architecture: Human-Inspired Dynamic Architecture},
   year = {2025},
   url = {https://github.com/tomato-hida/hida}
 }

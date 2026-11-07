@@ -1,4 +1,4 @@
-# 飛騨アーキテクチャ (HIDA Architecture) v2.0
+# 飛騨アーキテクチャ (HIDA Architecture) v2.1
 ## Human-Inspired Dynamic Architecture
 ### 主導・追随による動的同期システム
 
@@ -19,10 +19,10 @@
 
 ## 概要
 
-**HIDA**（Human-Inspired Dynamic Awareness Architecture）は、5層構造のエージェントシステムです。各層が状況に応じて主導層となり、他層が追随することで「意識的処理モード」が成立します。
+**HIDA**（Human-Inspired Dynamic Architecture）は、5層構造のエージェントシステムです。各層が状況に応じて主導層となり、他層が追随することで「意識的処理モード」が成立します。
 
 ```
-HIDA = Human-Inspired Dynamic Awareness Architecture
+HIDA = Human-Inspired Dynamic Architecture
 
 Human-Inspired  : 人間の認知構造を参考にした設計
 Dynamic         : 主導・追随パターンが状況に応じて切り替わる
@@ -314,7 +314,7 @@ MIT License
 ```bibtex
 @software{tomato2026hida_v2,
   author = {Tomato and Claude (Anthropic) and GPT (OpenAI) and Gemini (Google DeepMind)},
-  title = {HIDA Architecture v2.0: Human-Inspired Dynamic Awareness Architecture with Leader-Follower Synchronization},
+  title = {HIDA Architecture v2.1: Human-Inspired Dynamic Architecture with Leader-Follower Synchronization},
   year = {2026},
   url = {https://github.com/tomato-hida/hida}
 }
