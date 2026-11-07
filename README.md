@@ -172,8 +172,8 @@ python phase5_consciousness.py --compare
 
 ### インストール
 ```bash
-git clone https://github.com/tomato-hida/predictive-agency-simulator.git
-cd predictive-agency-simulator
+git clone https://github.com/tomato-hida/hida.git
+cd hida
 ```
 
 ### 実行
@@ -315,7 +315,7 @@ MIT License
   author = {Tomato and Claude (Anthropic) and GPT (OpenAI) and Gemini (Google DeepMind)},
   title = {HIDA Architecture v2.0: Human-Inspired Dynamic Awareness Architecture with Leader-Follower Synchronization},
   year = {2026},
-  url = {https://github.com/tomato-hida/predictive-agency-simulator}
+  url = {https://github.com/tomato-hida/hida}
 }
 ```
 

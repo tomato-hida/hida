@@ -126,8 +126,8 @@ Layer numbers are for explanation only, not processing order. Layers 2-4 are int
 ### Installation
 
 ```bash
-git clone https://github.com/tomato-hida/predictive-agency-simulator.git
-cd predictive-agency-simulator
+git clone https://github.com/tomato-hida/hida.git
+cd hida
 ```
 
 ### Run
@@ -215,7 +215,7 @@ MIT License
   author = {Tomato and Claude (Anthropic) and GPT (OpenAI) and Gemini (Google DeepMind)},
   title = {HIDA Architecture: Human-Inspired Dynamic Awareness Architecture},
   year = {2025},
-  url = {https://github.com/tomato-hida/predictive-agency-simulator}
+  url = {https://github.com/tomato-hida/hida}
 }
 ```
 
