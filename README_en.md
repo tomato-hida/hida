@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 
-[日本語 README](README_ja_hida.md)
+[日本語 README](README.md)
 
 📚 **[Documentation](docs/)** - Detailed theory and extension guide for Phase 6+
 
@@ -39,7 +39,7 @@ The following experiments demonstrate the system's behavior.
 ### Experiment 1: Sensation Value Inversion
 
 ```bash
-cd code
+cd experiments/02_phases
 python phase3_dna_and_learning.py --dna_pain=100
 ```
 
@@ -50,7 +50,7 @@ When DNA initial values (sensation weights) are set to extremes, pain stimuli ma
 ### Experiment 2: Consciousness Mode Persistence Rate
 
 ```bash
-cd code
+cd experiments/02_phases
 python phase5_consciousness.py --environment=focused --steps=10000
 ```
 
@@ -61,7 +61,7 @@ Consciousness mode (full-layer coordination) stabilizes at approximately 70% per
 ### Experiment 3: Environmental Complexity and Self-Formation
 
 ```bash
-cd code
+cd experiments/02_phases
 python phase5_consciousness.py --compare
 ```
 
@@ -133,7 +133,7 @@ cd predictive-agency-simulator
 ### Run
 
 ```bash
-cd code
+cd experiments/02_phases
 
 # Phase 1: Minimal implementation
 python phase1_minimal.py
@@ -151,17 +151,17 @@ python phase5_consciousness.py --compare
 
 | Phase | File | Description |
 |-------|------|-------------|
-| 1 | `phase1_minimal.py` | Basic operation verification |
-| 2 | `phase2_qualia_expansion.py` | Threshold behavior with increased qualia count |
-| 3 | `phase3_dna_and_learning.py` | Behavior changes from DNA initial values |
-| 4 | `phase4_memory_and_self.py` | Relationship between memory layer and self-formation |
-| 5 | `phase5_consciousness.py` | Consciousness mode persistence and environment dependency |
+| 1 | `experiments/02_phases/phase1_minimal.py` | Basic operation verification |
+| 2 | `experiments/02_phases/phase2_qualia_expansion.py` | Threshold behavior with increased qualia count |
+| 3 | `experiments/02_phases/phase3_dna_and_learning.py` | Behavior changes from DNA initial values |
+| 4 | `experiments/02_phases/phase4_memory_and_self.py` | Relationship between memory layer and self-formation |
+| 5 | `experiments/02_phases/phase5_consciousness.py` | Consciousness mode persistence and environment dependency |
 
 ---
 
 ## Extension Roadmap
 
-See [EXTENSION_ROADMAP.md](docs/EXTENSION_ROADMAP.md) for details.
+See [EXTENSION_ROADMAP_en.md](docs/applications/EXTENSION_ROADMAP_en.md) for details.
 
 - **Vector DB integration** — Large-scale memory implementation
 - **GPU parallelization** — Real-time processing

@@ -6,9 +6,9 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Version: v2.0](https://img.shields.io/badge/version-v2.0-green.svg)](#)
 
-[English README](README.md)
+[English README](README_en.md)
 
-📚 **[論文 v2.0](HIDA_theory_paper_v2_0.md)** | **[A4要約PDF](HIDA_v2_0_summary.pdf)** | **[AI向け仕様書](spec_v2.md)**
+📚 **[論文 v2.1](hida_v2_1/HIDA_theory_paper_v2_1.md)** | **[AI向け仕様書](docs/theory/spec_v2.md)**
 
 > **「意識なんて分からん、じゃあ実装してみよう」**  
 > — このプロジェクトの出発点
@@ -53,7 +53,7 @@ Architecture    : 拡張可能なフレームワーク
 - **夢**: L1外受容が抑制された状態でL4が主導する同期
 - **特殊・病理的な意識状態の一部**: 「主導層の硬直」「主導層の暴走」「主導層の不成立」として解釈可能
 
-詳細は[論文 §5](HIDA_theory_paper_v2_0.md) を参照。
+詳細は[論文 §5](hida_v2_1/HIDA_theory_paper_v2_1.md) を参照。
 
 ---
 
@@ -93,7 +93,7 @@ Architecture    : 拡張可能なフレームワーク
 ### 実験1: 統合版の動作（v2.0）
 
 ```bash
-cd code
+cd hida_v2_1
 python hida_unified_v2.py
 ```
 
@@ -125,7 +125,7 @@ python hida_unified_v2.py loop  # 低エネルギー5回
 ### 実験2: クオリアの分化（v1.1から継続）
 
 ```bash
-cd code
+cd experiments/02_phases
 python phase3_dna_and_learning.py --dna_pain=100
 ```
 
@@ -136,7 +136,7 @@ DNA初期値を極端に設定すると、通常とは異なる価値づけが�
 ### 実験3: 意識持続率の環境依存性
 
 ```bash
-cd code
+cd experiments/02_phases
 python phase5_consciousness.py --compare
 ```
 
@@ -178,15 +178,13 @@ cd predictive-agency-simulator
 
 ### 実行
 ```bash
-cd code
-
 # v2.0統合版（メイン）
-python hida_unified_v2.py
+python hida_v2_1/hida_unified_v2.py
 
 # Phase別実装（v1.1ベース、検証用）
-python phase1_minimal.py
-python phase3_dna_and_learning.py --dna_pain=100
-python phase5_consciousness.py --compare
+python experiments/02_phases/phase1_minimal.py
+python experiments/02_phases/phase3_dna_and_learning.py --dna_pain=100
+python experiments/02_phases/phase5_consciousness.py --compare
 ```
 
 ---
@@ -195,15 +193,14 @@ python phase5_consciousness.py --compare
 
 | ファイル | 内容 |
 |---|---|
-| `code/hida_unified_v2.py` | **v2.0統合版（メイン）** |
-| `code/phase1_minimal.py` | 最小構成での動作確認 |
-| `code/phase2_qualia_expansion.py` | クオリア数を増やした場合の閾値変化 |
-| `code/phase3_dna_and_learning.py` | DNA初期値による振る舞いの変化 |
-| `code/phase4_memory_and_self.py` | 記憶層と自己形成の関係 |
-| `code/phase5_consciousness.py` | 意識モードの持続率と環境依存性 |
-| `HIDA_theory_paper_v2_0.md` | v2.0論文本体 |
-| `HIDA_v2_0_summary.pdf` | A4一枚要約 |
-| `spec_v2.md` | AI向け実装仕様書 |
+| `hida_v2_1/hida_unified_v2.py` | **v2.0統合版（メイン）** |
+| `experiments/02_phases/phase1_minimal.py` | 最小構成での動作確認 |
+| `experiments/02_phases/phase2_qualia_expansion.py` | クオリア数を増やした場合の閾値変化 |
+| `experiments/02_phases/phase3_dna_and_learning.py` | DNA初期値による振る舞いの変化 |
+| `experiments/02_phases/phase4_memory_and_self.py` | 記憶層と自己形成の関係 |
+| `experiments/02_phases/phase5_consciousness.py` | 意識モードの持続率と環境依存性 |
+| `hida_v2_1/HIDA_theory_paper_v2_1.md` | 論文本体（v2.1） |
+| `docs/theory/spec_v2.md` | AI向け実装仕様書 |
 
 ---
 
@@ -240,13 +237,13 @@ v1.1で「環境を超えて意識ON率約70%で安定」という観察があ�
 
 v2.0はv1.1を否定するものではなく、より一般的な枠組みへの拡張です。v1.1の対称的同期は、v2.0の理論上は「複数層の活動量が近く、明確な主導層が前景化しない均衡的同期状態」として位置づけられます。ただし、現行の簡易実装では均衡的同期状態は明示的には実装しておらず、主導層なしは `sync_type=None` として扱います。
 
-詳細は[論文 Changelog](HIDA_theory_paper_v2_0.md) 参照。
+詳細は[論文 Changelog](hida_v2_1/HIDA_theory_paper_v2_1.md) 参照。
 
 ---
 
 ## 拡張ロードマップ
 
-詳細は [EXTENSION_ROADMAP.md](docs/EXTENSION_ROADMAP.md) を参照。
+詳細は [EXTENSION_ROADMAP.md](docs/applications/EXTENSION_ROADMAP.md) を参照。
 
 - **閾値キャリブレーション** — 環境を超えて安定する閾値の探索
 - **追随整合性の時間遅れ相関への拡張** — 簡易版（同時応答）からの精密化
