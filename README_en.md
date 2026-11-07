@@ -9,6 +9,8 @@
 
 📚 **[Documentation](docs/)** - Detailed theory and extension guide for Phase 6+
 
+📄 **Papers (Japanese)**: **[v2.1](hida_v2_1/HIDA_theory_paper_v2_1.md)** | [v2.0 (previous version)](docs/theory/HIDA_theory_paper_v2_0.md)
+
 > **Terminology note**: In this project, "consciousness" is operationally defined as "full-layer coordination mode for responding to prediction errors." This is an engineering definition, not a philosophical claim.
 
 ---

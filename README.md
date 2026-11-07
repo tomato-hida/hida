@@ -8,7 +8,7 @@
 
 [English README](README_en.md)
 
-📚 **[論文 v2.1](hida_v2_1/HIDA_theory_paper_v2_1.md)** | **[AI向け仕様書](docs/theory/spec_v2.md)**
+📚 **[論文 v2.1](hida_v2_1/HIDA_theory_paper_v2_1.md)** | [論文 v2.0（過去の版）](docs/theory/HIDA_theory_paper_v2_0.md) | **[AI向け仕様書](docs/theory/spec_v2.md)**
 
 > **「意識なんて分からん、じゃあ実装してみよう」**  
 > — このプロジェクトの出発点
@@ -200,6 +200,7 @@ python experiments/02_phases/phase5_consciousness.py --compare
 | `experiments/02_phases/phase4_memory_and_self.py` | 記憶層と自己形成の関係 |
 | `experiments/02_phases/phase5_consciousness.py` | 意識モードの持続率と環境依存性 |
 | `hida_v2_1/HIDA_theory_paper_v2_1.md` | 論文本体（v2.1） |
+| `docs/theory/HIDA_theory_paper_v2_0.md` | 論文 v2.0（過去の版） |
 | `docs/theory/spec_v2.md` | AI向け実装仕様書 |
 
 ---
