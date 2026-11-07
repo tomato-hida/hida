@@ -28,7 +28,6 @@ HIDA = Human-Inspired Dynamic Architecture
 
 Human-Inspired  : Design based on human cognitive structure
 Dynamic         : Processing mode switches based on prediction error
-Awareness       : Self-model forms from accumulated pattern recognition
 Architecture    : Extensible framework
 ```
 

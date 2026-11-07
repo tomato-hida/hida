@@ -26,7 +26,6 @@ HIDA = Human-Inspired Dynamic Architecture
 
 Human-Inspired  : 人間の認知構造を参考にした設計
 Dynamic         : 主導・追随パターンが状況に応じて切り替わる
-Awareness       : 同期パターンの蓄積から自己モデルが形成される
 Architecture    : 拡張可能なフレームワーク
 ```
 
@@ -312,7 +311,7 @@ MIT License
 ## 引用
 
 ```bibtex
-@software{tomato2026hida_v2,
+@software{tomato2026hida_v2_1,
   author = {Tomato and Claude (Anthropic) and GPT (OpenAI) and Gemini (Google DeepMind)},
   title = {HIDA Architecture v2.1: Human-Inspired Dynamic Architecture with Leader-Follower Synchronization},
   year = {2026},
@@ -326,5 +325,6 @@ MIT License
 - v1.0: 2025年11月（5層構造の初版）
 - v1.1: 2026年5月10日（断定表現の整理）
 - v2.0: 2026年5月20日（主導・追随モデルへの再定式化）
+- v2.1: 2026年6月23日（実装面の精密化と検証）
 
 **作成者：** とまと（トマト農家・独立研究者）＋ AI協業
