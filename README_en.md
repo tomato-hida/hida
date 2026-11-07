@@ -1,5 +1,5 @@
 # HIDA Architecture
-## Human-Inspired Dynamic Awareness Architecture
+## Human-Inspired Dynamic Architecture
 ### Prediction-error driven state transition system
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)

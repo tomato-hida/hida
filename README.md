@@ -1,10 +1,10 @@
 # 飛騨アーキテクチャ (HIDA Architecture) v2.0
-## Human-Inspired Dynamic Awareness Architecture
+## Human-Inspired Dynamic Architecture
 ### 主導・追随による動的同期システム
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Version: v2.0](https://img.shields.io/badge/version-v2.0-green.svg)](#)
+[![Version: v2.1](https://img.shields.io/badge/version-v2.1-green.svg)](#)
 
 [English README](README_en.md)
 
