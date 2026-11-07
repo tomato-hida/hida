@@ -1,0 +1,488 @@
+[
+  {
+    "timestamp": "2025-12-22T20:22:28.900830",
+    "event": "goal_reached_with_red",
+    "position": [
+      6,
+      3
+    ],
+    "energy": 0.8149999999999998,
+    "qualia": {
+      "fear": 0.25650000000000006,
+      "desire": 0.0,
+      "urgency": 0.0,
+      "valence": 0.0,
+      "arousal": 0.18525
+    },
+    "emotion_label": "普通",
+    "is_session_end": true
+  },
+  {
+    "timestamp": "2025-12-22T20:22:29.623568",
+    "event": "go_to_green",
+    "position": [
+      2,
+      7
+    ],
+    "energy": 0.21499999999999994,
+    "qualia": {
+      "fear": 0.0,
+      "desire": 0.0,
+      "urgency": 0.70487625,
+      "valence": -0.380396016,
+      "arousal": -0.1762190625
+    },
+    "emotion_label": "急がなきゃ",
+    "is_session_end": false
+  },
+  {
+    "timestamp": "2025-12-22T20:22:30.212131",
+    "event": "goal_reached_with_green",
+    "position": [
+      2,
+      7
+    ],
+    "energy": 0.21499999999999994,
+    "qualia": {
+      "fear": 0.0,
+      "desire": 0.0,
+      "urgency": 0.70487625,
+      "valence": -0.380396016,
+      "arousal": -0.1762190625
+    },
+    "emotion_label": "急がなきゃ",
+    "is_session_end": true
+  },
+  {
+    "timestamp": "2025-12-22T20:22:30.215228",
+    "event": "結果: {'name': 'ball', 'color': 'green'}を取得",
+    "position": [
+      2,
+      7
+    ],
+    "energy": 0.21499999999999994,
+    "qualia": {
+      "fear": 0.0,
+      "desire": 0.0,
+      "urgency": 0.70487625,
+      "valence": -0.380396016,
+      "arousal": -0.1762190625
+    },
+    "emotion_label": "急がなきゃ",
+    "is_session_end": false
+  },
+  {
+    "timestamp": "2025-12-22T20:23:28.128986",
+    "event": "goal_reached_with_green",
+    "position": [
+      2,
+      7
+    ],
+    "energy": 0.9149999999999999,
+    "qualia": {
+      "fear": 0.0,
+      "desire": 0.0,
+      "urgency": 0.0,
+      "valence": 0.0,
+      "arousal": 0.0
+    },
+    "emotion_label": "普通",
+    "is_session_end": true
+  },
+  {
+    "timestamp": "2025-12-22T20:23:28.752838",
+    "event": "go_to_green",
+    "position": [
+      2,
+      7
+    ],
+    "energy": 0.21499999999999994,
+    "qualia": {
+      "fear": 0.0,
+      "desire": 0.0,
+      "urgency": 0.70487625,
+      "valence": -0.380396016,
+      "arousal": -0.1762190625
+    },
+    "emotion_label": "急がなきゃ",
+    "is_session_end": false
+  },
+  {
+    "timestamp": "2025-12-22T20:23:29.425387",
+    "event": "goal_reached_with_green",
+    "position": [
+      2,
+      7
+    ],
+    "energy": 0.21499999999999994,
+    "qualia": {
+      "fear": 0.0,
+      "desire": 0.0,
+      "urgency": 0.70487625,
+      "valence": -0.380396016,
+      "arousal": -0.1762190625
+    },
+    "emotion_label": "急がなきゃ",
+    "is_session_end": true
+  },
+  {
+    "timestamp": "2025-12-22T20:23:29.427498",
+    "event": "結果: {'name': 'ball', 'color': 'green'}を取得",
+    "position": [
+      2,
+      7
+    ],
+    "energy": 0.21499999999999994,
+    "qualia": {
+      "fear": 0.0,
+      "desire": 0.0,
+      "urgency": 0.70487625,
+      "valence": -0.380396016,
+      "arousal": -0.1762190625
+    },
+    "emotion_label": "急がなきゃ",
+    "is_session_end": false
+  },
+  {
+    "timestamp": "2025-12-22T20:24:05.668062",
+    "event": "go_to_green",
+    "position": [
+      2,
+      7
+    ],
+    "energy": 0.21499999999999994,
+    "qualia": {
+      "fear": 0.0,
+      "desire": 0.0,
+      "urgency": 0.70487625,
+      "valence": -0.380396016,
+      "arousal": -0.1762190625
+    },
+    "emotion_label": "急がなきゃ",
+    "is_session_end": false
+  },
+  {
+    "timestamp": "2025-12-22T20:24:06.288745",
+    "event": "goal_reached_with_green",
+    "position": [
+      2,
+      7
+    ],
+    "energy": 0.21499999999999994,
+    "qualia": {
+      "fear": 0.0,
+      "desire": 0.0,
+      "urgency": 0.70487625,
+      "valence": -0.380396016,
+      "arousal": -0.1762190625
+    },
+    "emotion_label": "急がなきゃ",
+    "is_session_end": true
+  },
+  {
+    "timestamp": "2025-12-22T20:24:06.290789",
+    "event": "結果: {'name': 'ball', 'color': 'green'}を取得",
+    "position": [
+      2,
+      7
+    ],
+    "energy": 0.21499999999999994,
+    "qualia": {
+      "fear": 0.0,
+      "desire": 0.0,
+      "urgency": 0.70487625,
+      "valence": -0.380396016,
+      "arousal": -0.1762190625
+    },
+    "emotion_label": "急がなきゃ",
+    "is_session_end": false
+  },
+  {
+    "timestamp": "2025-12-22T20:24:06.959410",
+    "event": "go_to_green",
+    "position": [
+      2,
+      7
+    ],
+    "energy": 0.21499999999999994,
+    "qualia": {
+      "fear": 0.0,
+      "desire": 0.0,
+      "urgency": 0.70487625,
+      "valence": -0.380396016,
+      "arousal": -0.1762190625
+    },
+    "emotion_label": "急がなきゃ",
+    "is_session_end": false
+  },
+  {
+    "timestamp": "2025-12-22T20:24:07.717925",
+    "event": "goal_reached_with_green",
+    "position": [
+      2,
+      7
+    ],
+    "energy": 0.21499999999999994,
+    "qualia": {
+      "fear": 0.0,
+      "desire": 0.0,
+      "urgency": 0.70487625,
+      "valence": -0.380396016,
+      "arousal": -0.1762190625
+    },
+    "emotion_label": "急がなきゃ",
+    "is_session_end": true
+  },
+  {
+    "timestamp": "2025-12-22T20:24:07.719770",
+    "event": "結果: {'name': 'ball', 'color': 'green'}を取得",
+    "position": [
+      2,
+      7
+    ],
+    "energy": 0.21499999999999994,
+    "qualia": {
+      "fear": 0.0,
+      "desire": 0.0,
+      "urgency": 0.70487625,
+      "valence": -0.380396016,
+      "arousal": -0.1762190625
+    },
+    "emotion_label": "急がなきゃ",
+    "is_session_end": false
+  },
+  {
+    "timestamp": "2025-12-22T20:24:08.358222",
+    "event": "go_to_green",
+    "position": [
+      2,
+      7
+    ],
+    "energy": 0.21499999999999994,
+    "qualia": {
+      "fear": 0.0,
+      "desire": 0.0,
+      "urgency": 0.70487625,
+      "valence": -0.380396016,
+      "arousal": -0.1762190625
+    },
+    "emotion_label": "急がなきゃ",
+    "is_session_end": false
+  },
+  {
+    "timestamp": "2025-12-22T20:24:08.995095",
+    "event": "goal_reached_with_green",
+    "position": [
+      2,
+      7
+    ],
+    "energy": 0.21499999999999994,
+    "qualia": {
+      "fear": 0.0,
+      "desire": 0.0,
+      "urgency": 0.70487625,
+      "valence": -0.380396016,
+      "arousal": -0.1762190625
+    },
+    "emotion_label": "急がなきゃ",
+    "is_session_end": true
+  },
+  {
+    "timestamp": "2025-12-22T20:24:08.996434",
+    "event": "結果: {'name': 'ball', 'color': 'green'}を取得",
+    "position": [
+      2,
+      7
+    ],
+    "energy": 0.21499999999999994,
+    "qualia": {
+      "fear": 0.0,
+      "desire": 0.0,
+      "urgency": 0.70487625,
+      "valence": -0.380396016,
+      "arousal": -0.1762190625
+    },
+    "emotion_label": "急がなきゃ",
+    "is_session_end": false
+  },
+  {
+    "timestamp": "2025-12-22T20:24:09.537671",
+    "event": "go_to_green",
+    "position": [
+      2,
+      7
+    ],
+    "energy": 0.21499999999999994,
+    "qualia": {
+      "fear": 0.0,
+      "desire": 0.0,
+      "urgency": 0.70487625,
+      "valence": -0.380396016,
+      "arousal": -0.1762190625
+    },
+    "emotion_label": "急がなきゃ",
+    "is_session_end": false
+  },
+  {
+    "timestamp": "2025-12-22T20:24:10.165339",
+    "event": "goal_reached_with_green",
+    "position": [
+      2,
+      7
+    ],
+    "energy": 0.21499999999999994,
+    "qualia": {
+      "fear": 0.0,
+      "desire": 0.0,
+      "urgency": 0.70487625,
+      "valence": -0.380396016,
+      "arousal": -0.1762190625
+    },
+    "emotion_label": "急がなきゃ",
+    "is_session_end": true
+  },
+  {
+    "timestamp": "2025-12-22T20:24:10.166289",
+    "event": "結果: {'name': 'ball', 'color': 'green'}を取得",
+    "position": [
+      2,
+      7
+    ],
+    "energy": 0.21499999999999994,
+    "qualia": {
+      "fear": 0.0,
+      "desire": 0.0,
+      "urgency": 0.70487625,
+      "valence": -0.380396016,
+      "arousal": -0.1762190625
+    },
+    "emotion_label": "急がなきゃ",
+    "is_session_end": false
+  },
+  {
+    "timestamp": "2025-12-22T20:24:10.699536",
+    "event": "go_to_green",
+    "position": [
+      2,
+      7
+    ],
+    "energy": 0.21499999999999994,
+    "qualia": {
+      "fear": 0.0,
+      "desire": 0.0,
+      "urgency": 0.70487625,
+      "valence": -0.380396016,
+      "arousal": -0.1762190625
+    },
+    "emotion_label": "急がなきゃ",
+    "is_session_end": false
+  },
+  {
+    "timestamp": "2025-12-22T20:24:11.373121",
+    "event": "goal_reached_with_green",
+    "position": [
+      2,
+      7
+    ],
+    "energy": 0.21499999999999994,
+    "qualia": {
+      "fear": 0.0,
+      "desire": 0.0,
+      "urgency": 0.70487625,
+      "valence": -0.380396016,
+      "arousal": -0.1762190625
+    },
+    "emotion_label": "急がなきゃ",
+    "is_session_end": true
+  },
+  {
+    "timestamp": "2025-12-22T20:24:11.374586",
+    "event": "結果: {'name': 'ball', 'color': 'green'}を取得",
+    "position": [
+      2,
+      7
+    ],
+    "energy": 0.21499999999999994,
+    "qualia": {
+      "fear": 0.0,
+      "desire": 0.0,
+      "urgency": 0.70487625,
+      "valence": -0.380396016,
+      "arousal": -0.1762190625
+    },
+    "emotion_label": "急がなきゃ",
+    "is_session_end": false
+  },
+  {
+    "timestamp": "2025-12-22T20:34:49.254665",
+    "event": "goal_reached_with_green",
+    "position": [
+      2,
+      7
+    ],
+    "energy": 0.9149999999999999,
+    "qualia": {
+      "fear": 0.0,
+      "desire": 0.0,
+      "urgency": 0.0,
+      "valence": 0.0,
+      "arousal": 0.0
+    },
+    "emotion_label": "普通",
+    "is_session_end": true
+  },
+  {
+    "timestamp": "2025-12-22T20:34:49.880526",
+    "event": "go_to_green",
+    "position": [
+      2,
+      7
+    ],
+    "energy": 0.21499999999999994,
+    "qualia": {
+      "fear": 0.0,
+      "desire": 0.0,
+      "urgency": 0.70487625,
+      "valence": -0.380396016,
+      "arousal": -0.1762190625
+    },
+    "emotion_label": "急がなきゃ",
+    "is_session_end": false
+  },
+  {
+    "timestamp": "2025-12-22T20:34:50.495137",
+    "event": "goal_reached_with_green",
+    "position": [
+      2,
+      7
+    ],
+    "energy": 0.21499999999999994,
+    "qualia": {
+      "fear": 0.0,
+      "desire": 0.0,
+      "urgency": 0.70487625,
+      "valence": -0.380396016,
+      "arousal": -0.1762190625
+    },
+    "emotion_label": "急がなきゃ",
+    "is_session_end": true
+  },
+  {
+    "timestamp": "2025-12-22T20:34:50.497132",
+    "event": "結果: {'name': 'ball', 'color': 'green'}を取得",
+    "position": [
+      2,
+      7
+    ],
+    "energy": 0.21499999999999994,
+    "qualia": {
+      "fear": 0.0,
+      "desire": 0.0,
+      "urgency": 0.70487625,
+      "valence": -0.380396016,
+      "arousal": -0.1762190625
+    },
+    "emotion_label": "急がなきゃ",
+    "is_session_end": false
+  }
+]

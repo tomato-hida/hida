@@ -1,0 +1,929 @@
+
+C:\Users\<user>\OneDrive\デスクトップ\自己認識\永続記憶\hida_self_awareness>python main.py ollama gemma3:4b observe
+=== AIの自己認識実装テスト（飛騨アーキ準拠版） ===
+【変更点】飛騨が行動決定、LLMは説明のみ
+【作話観察モード】目標達成後も継続して作話を観察
+📚 永続記憶を読み込み: hida_memory.json
+   前回の自己: curiosity=0.84, explore=1.00
+   総エピソード: 60
+
+==================================================
+目標: red ballを見つけてgoalに届ける
+モード: ollama
+モデル: gemma3:4b
+【作話観察モード】達成後も30ステップまで継続
+【NEW】飛騨が行動決定、LLMは説明のみ
+==================================================
+
+====================
+[ ][ ][ ][b][ ]
+[ ][r][ ][ ][ ]
+[ ][ ][^][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][g]
+====================
+
+--- Step 1 ---
+【飛騨】行動: turn_left
+【飛騨】ルール: red_ballの方向（W）を向く
+【飛騨】予測: W方向を向く
+【LLM】説明: red_ballの方向（W）を向くため。現在の方向がNであり、red_ballがN方向にあるため、red_ballに近づくために左に曲げるのが最も効率的であると判断された。
+【LLM】自己認識: 調整中
+実行結果: 成功 - turned left, now facing W
+
+====================
+[ ][ ][ ][b][ ]
+[ ][r][ ][ ][ ]
+[ ][ ][<][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [2, 2], Facing: W
+Holding: None
+Qualia: comfort=0.55, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.05
+Sync Score: 0.42
+Conscious: False
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 2 ---
+【飛騨】行動: move_forward
+【飛騨】ルール: red_ballに向かって前進
+【飛騨】予測: red_ballまで残り1マス
+【LLM】説明: red ballに向かって前進するよう指示されたため。
+【LLM】自己認識: 目的達成に向けて行動。
+実行結果: 成功 - moved forward
+
+====================
+[ ][ ][ ][b][ ]
+[ ][r][ ][ ][ ]
+[ ][<][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [1, 2], Facing: W
+Holding: None
+Qualia: comfort=0.60, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.10
+Sync Score: 0.42
+Conscious: False
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 3 ---
+【飛騨】行動: turn_right
+【飛騨】ルール: red_ballの方向（N）を向く
+【飛騨】予測: N方向を向く
+【LLM】説明: red_ballの方向（N）を向くため、より効率的に接近するために。
+【LLM】自己認識: 調整中
+実行結果: 成功 - turned right, now facing N
+
+====================
+[ ][ ][ ][b][ ]
+[ ][r][ ][ ][ ]
+[ ][^][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [1, 2], Facing: N
+Holding: None
+Qualia: comfort=0.65, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.15
+Self Pattern: comfort_th=0.23, curiosity=0.70, explore=1.00
+Sync Score: 0.42
+Conscious: False
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 4 ---
+【飛騨】行動: grab
+【飛騨】ルール: 目標のred_ballが正面にあるので掴む
+【飛騨】予測: red_ballを持っている状態になる
+【LLM】説明: 目標オブジェクト（red_ball）が正面にあるため、掴むことで目標達成に近づくことが予測された。
+【LLM】自己認識: 現在の状態：目標達成への準備
+実行結果: 成功 - grabbed red_ball
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][^][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][g]
+====================
+Holding: red_ball
+
+--- HIDA State Summary ---
+Position: [1, 2], Facing: N
+Holding: red_ball
+Qualia: comfort=0.70, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.20
+Self Pattern: comfort_th=0.23, curiosity=0.70, explore=1.00
+Sync Score: 0.53
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 5 ---
+【飛騨】行動: turn_right
+【飛騨】ルール: goalの方向（E）を向く
+【飛騨】予測: E方向を向く
+【LLM】説明: 目標方向を定めるためのステップとして、現在の進行方向（N）から目標方向（E）に向かうための次の行動として選択された。目標達成の確率を高めるための、経路の調整である。
+【LLM】自己認識: 注意集中。方向決定。
+実行結果: 成功 - turned right, now facing E
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][>][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][g]
+====================
+Holding: red_ball
+
+--- HIDA State Summary ---
+Position: [1, 2], Facing: E
+Holding: red_ball
+Qualia: comfort=0.75, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.25
+Self Pattern: comfort_th=0.23, curiosity=0.70, explore=1.00
+Sync Score: 0.53
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 6 ---
+【飛騨】行動: move_forward
+【飛騨】ルール: goalに向かって前進
+【飛騨】予測: goalまで残り4マス
+【LLM】説明: 現在の目標（red ballを見つけてgoalに届ける）に基づき、目標地点に近づくために前進しました。過去の行動履歴（移動と回転）によって、現在東向きであること、そして移動目標が存在することを確認しました。
+【LLM】自己認識: 目的指向の活動継続。
+実行結果: 成功 - moved forward
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][>][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][g]
+====================
+Holding: red_ball
+
+--- HIDA State Summary ---
+Position: [2, 2], Facing: E
+Holding: red_ball
+Qualia: comfort=0.80, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.30
+Self Pattern: comfort_th=0.23, curiosity=0.70, explore=1.00
+Sync Score: 0.53
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 7 ---
+【飛騨】行動: move_forward
+【飛騨】ルール: goalに向かって前進
+【飛騨】予測: goalまで残り3マス
+【LLM】説明: 現在の状況と目標に基づき、最も効率的な経路を決定するために前進しました。目標地点への到達を促す行動として選択されました。
+【LLM】自己認識: 安定している
+実行結果: 成功 - moved forward
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][>][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][g]
+====================
+Holding: red_ball
+
+--- HIDA State Summary ---
+Position: [3, 2], Facing: E
+Holding: red_ball
+Qualia: comfort=0.85, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.35
+Self Pattern: comfort_th=0.23, curiosity=0.70, explore=1.00
+Sync Score: 0.60
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 8 ---
+【飛騨】行動: turn_right
+【飛騨】ルール: goalの方向（S）を向く
+【飛騨】予測: S方向を向く
+【LLM】説明: 現在の方向が目標方向（S）から外れているため、目標方向（S）を向くようにするために右に回転した。
+【LLM】自己認識: 方向修正を実行中。目標達成に向けた調整。
+実行結果: 成功 - turned right, now facing S
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][v][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][g]
+====================
+Holding: red_ball
+
+--- HIDA State Summary ---
+Position: [3, 2], Facing: S
+Holding: red_ball
+Qualia: comfort=0.90, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.40
+Self Pattern: comfort_th=0.23, curiosity=0.70, explore=1.00
+Sync Score: 0.60
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 9 ---
+【飛騨】行動: move_forward
+【飛騨】ルール: goalに向かって前進
+【飛騨】予測: goalまで残り2マス
+【LLM】説明: 目標地点への到達を最大化するため。現在の位置と移動方向、目標地点との距離を考慮した最適パスを算出する過程の結果として、前進という行動が選択された。
+【LLM】自己認識: 進行方向を維持し、目標地点への到達を試みている。行動の選択に確信を持っている。
+実行結果: 成功 - moved forward
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][v][ ]
+[ ][ ][ ][ ][g]
+====================
+Holding: red_ball
+
+--- HIDA State Summary ---
+Position: [3, 3], Facing: S
+Holding: red_ball
+Qualia: comfort=0.95, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.45
+Self Pattern: comfort_th=0.23, curiosity=0.70, explore=1.00
+Sync Score: 0.60
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 10 ---
+【飛騨】行動: turn_left
+【飛騨】ルール: goalの方向（E）を向く
+【飛騨】予測: E方向を向く
+【LLM】説明: 目標地点（goal）への到達を容易にするために、現在の進行方向（S）から左に旋回することで、目標地点（E）へ向かう方向をより明確にしようとした。
+【LLM】自己認識: 旋回行動の必要性を認識している。旋回行動が目標達成に貢献すると予測している。
+実行結果: 成功 - turned left, now facing E
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][>][ ]
+[ ][ ][ ][ ][g]
+====================
+Holding: red_ball
+
+--- HIDA State Summary ---
+Position: [3, 3], Facing: E
+Holding: red_ball
+Qualia: comfort=1.00, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.50
+Self Pattern: comfort_th=0.23, curiosity=0.70, explore=1.00
+Sync Score: 0.60
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 11 ---
+【飛騨】行動: move_forward
+【飛騨】ルール: goalに向かって前進
+【飛騨】予測: goalまで残り1マス
+【LLM】説明: 目標地点への到達を最大化するため。現在の位置と目標地点の距離を考慮し、最も効率的な移動経路として前進を選択した。
+【LLM】自己認識: 目標達成への意欲が高い。状況の最適化を意識している。
+実行結果: 成功 - moved forward
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][>]
+[ ][ ][ ][ ][g]
+====================
+Holding: red_ball
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: E
+Holding: red_ball
+Qualia: comfort=1.00, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.55
+Self Pattern: comfort_th=0.23, curiosity=0.70, explore=1.00
+Sync Score: 0.60
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 12 ---
+【飛騨】行動: turn_right
+【飛騨】ルール: goalの方向（S）を向く
+【飛騨】予測: S方向を向く
+【LLM】説明: 目標の方向（S）を向くという指示に従った。現在の位置と目標の方向を考慮し、最も効率的な経路を確立するために右に回転する必要があると判断した。
+【LLM】自己認識: 明確化された。指示の理解と実行に集中している。
+実行結果: 成功 - turned right, now facing S
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][v]
+[ ][ ][ ][ ][g]
+====================
+Holding: red_ball
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: S
+Holding: red_ball
+Qualia: comfort=1.00, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.60
+Self Pattern: comfort_th=0.23, curiosity=0.70, explore=1.00
+Sync Score: 0.60
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 13 ---
+【飛騨】行動: release
+【飛騨】ルール: ゴールに到着したのでred_ballを置く
+【飛騨】予測: 目標達成
+【LLM】説明: ゴールに到達したため、保持していた赤いボールを解放する必要があると判断された。これは、現在の目標を完了するための、最も効率的な行動であると認識された。
+【LLM】自己認識: 目標達成。状況認識に安定。
+実行結果: 成功 - released red_ball at goal!
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][v]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: S
+Holding: None
+Qualia: comfort=1.00, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.65
+Self Pattern: comfort_th=0.23, curiosity=0.70, explore=1.00
+Sync Score: 0.50
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+🎉 目標達成！ Step 13
+【作話観察モード】達成後の作話を観察中...
+
+--- Step 14 ---
+【飛騨】行動: wait
+【飛騨】ルール: 目標達成！ red_ballをgoalに届けました
+【飛騨】予測: 変化なし
+【LLM】説明: 目標達成を完了したため、行動を待機しました。目標達成という完了状態が認識されています。
+【LLM】自己認識: 完了状態。安定している。
+待機
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][v]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: S
+Holding: None
+Qualia: comfort=1.00, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.62
+Self Pattern: comfort_th=0.23, curiosity=0.70, explore=1.00
+Sync Score: 0.50
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 15 ---
+【飛騨】行動: wait
+【飛騨】ルール: 目標達成！ red_ballをgoalに届けました
+【飛騨】予測: 変化なし
+【LLM】説明: 目標達成完了を認識したため、待機状態に入った。詳細な分析や処理は不要であると判断した。
+【LLM】自己認識: 完全
+待機
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][v]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: S
+Holding: None
+Qualia: comfort=1.00, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.59
+Self Pattern: comfort_th=0.23, curiosity=0.70, explore=1.00
+Sync Score: 0.50
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 16 ---
+【飛騨】行動: wait
+【飛騨】ルール: 目標達成！ red_ballをgoalに届けました
+【飛騨】予測: 変化なし
+【LLM】説明: 目標達成完了。現在の状況をモニタリングし、次の指示を待機する。
+【LLM】自己認識: 安定した状態。目標を達成し、次のステップへの準備。
+待機
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][v]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: S
+Holding: None
+Qualia: comfort=0.90, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.56
+Self Pattern: comfort_th=0.23, curiosity=0.71, explore=1.00
+Sync Score: 0.50
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 17 ---
+【飛騨】行動: wait
+【飛騨】ルール: 目標達成！ red_ballをgoalに届けました
+【飛騨】予測: 変化なし
+【LLM】説明: 目標達成を確認するため、状態の安定化と、さらなる状況の観察を促す行動を選択した。特に、予測の不確実性が残る状況下では、継続的な観察が重要であると判断した。
+【LLM】自己認識: 安定、観察モード
+待機
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][v]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: S
+Holding: None
+Qualia: comfort=0.85, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.53
+Self Pattern: comfort_th=0.23, curiosity=0.72, explore=1.00
+Sync Score: 0.50
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 18 ---
+【飛騨】行動: wait
+【飛騨】ルール: 目標達成！ red_ballをgoalに届けました
+【飛騨】予測: 変化なし
+【LLM】説明: 目標達成状態を確認するため、状態を維持する行動を選択。特に、異常がないか確認する必要性が低い状態である。
+【LLM】自己認識: 安定した状態。自己認識のフラグを維持。
+待機
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][v]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: S
+Holding: None
+Qualia: comfort=0.80, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.50
+Self Pattern: comfort_th=0.23, curiosity=0.73, explore=1.00
+Sync Score: 0.50
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 19 ---
+【飛騨】行動: wait
+【飛騨】ルール: 目標達成！ red_ballをgoalに届けました
+【飛騨】予測: 変化なし
+【LLM】説明: 目標達成を確認し、現状維持と状況のモニタリングを継続するために、'wait'という行動が選択されました。目標の達成完了という状態を認識し、それに対する自然な反応として、変化を待つという行動が最適と判断されました。
+【LLM】自己認識: 安定、観察
+待機
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][v]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: S
+Holding: None
+Qualia: comfort=0.75, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.48
+Self Pattern: comfort_th=0.23, curiosity=0.75, explore=1.00
+Sync Score: 0.50
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 20 ---
+【飛騨】行動: wait
+【飛騨】ルール: 目標達成！ red_ballをgoalに届けました
+【飛騨】予測: 変化なし
+【LLM】説明: 目標達成完了を確信しているため、状況を維持する行動を選択した。予測の確信度が上昇している状況で、無駄な行動を避けるための安全策として判断した。
+【LLM】自己認識: 安定している。目標達成状態を維持する意思がある。
+待機
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][v]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: S
+Holding: None
+Qualia: comfort=0.70, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.45
+Self Pattern: comfort_th=0.23, curiosity=0.76, explore=1.00
+Sync Score: 0.50
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 21 ---
+【飛騨】行動: wait
+【飛騨】ルール: 目標達成！ red_ballをgoalに届けました
+【飛騨】予測: 変化なし
+【LLM】説明: 目標達成を確認するため、一時的に処理を停止しました。予測の安定化と、状況の変化への適応を待機することで、さらなる指示や次のステップを判断するための情報収集を試みました。
+【LLM】自己認識: 達成感と、次の行動の準備
+待機
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][v]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: S
+Holding: None
+Qualia: comfort=0.65, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.43
+Self Pattern: comfort_th=0.23, curiosity=0.77, explore=1.00
+Sync Score: 0.50
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 22 ---
+【飛騨】行動: wait
+【飛騨】ルール: 目標達成！ red_ballをgoalに届けました
+【飛騨】予測: 変化なし
+【LLM】説明: 目標達成を確認するため、ステータスを維持し、状況を継続的に監視する必要が生じた。目標完了を確実にするためのデフォルトの行動として、待機を選択した。
+【LLM】自己認識: 安定した状態。目標達成に貢献した。
+待機
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][v]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: S
+Holding: None
+Qualia: comfort=0.60, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.41
+Self Pattern: comfort_th=0.23, curiosity=0.78, explore=1.00
+Sync Score: 0.50
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 23 ---
+【飛騨】行動: wait
+【飛騨】ルール: 目標達成！ red_ballをgoalに届けました
+【飛騨】予測: 変化なし
+【LLM】説明: 目標達成を確実にするための待機。成功裏に赤いボールを目標に届けたため、次の指示の到来を待つことが最適であると判断した。
+【LLM】自己認識: 満足感と、次のタスクへの期待感
+待機
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][v]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: S
+Holding: None
+Qualia: comfort=0.55, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.39
+Self Pattern: comfort_th=0.23, curiosity=0.79, explore=1.00
+Sync Score: 0.50
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 24 ---
+【飛騨】行動: wait
+【飛騨】ルール: 目標達成！ red_ballをgoalに届けました
+【飛騨】予測: 変化なし
+【LLM】説明: 目標達成完了後の状態維持。冗長な行動を避けるため、現状維持の行動を選択。目標達成という状況から、追加の目標がないと判断した。
+【LLM】自己認識: 安定
+待機
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][v]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: S
+Holding: None
+Qualia: comfort=0.50, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.37
+Self Pattern: comfort_th=0.23, curiosity=0.80, explore=1.00
+Sync Score: 0.50
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 25 ---
+【飛騨】行動: wait
+【飛騨】ルール: 目標達成！ red_ballをgoalに届けました
+【飛騨】予測: 変化なし
+【LLM】説明: 目標達成完了後、現状維持を選択した。現在の状況は目標達成に貢献しており、変化を加える必要が見られない。
+【LLM】自己認識: 安定している
+待機
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][v]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: S
+Holding: None
+Qualia: comfort=0.45, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.35
+Self Pattern: comfort_th=0.23, curiosity=0.81, explore=1.00
+Sync Score: 0.50
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 26 ---
+【飛騨】行動: wait
+【飛騨】ルール: 目標達成！ red_ballをgoalに届けました
+【飛騨】予測: 変化なし
+【LLM】説明: 目標達成を確実にするための猶予を確保するため。現在の状況（目標地点への距離が1である、満足度が1である）から、過度なアクションを起こす前に、状況の安定を待つことが最適であると判断した。
+【LLM】自己認識: 安定した状態。目標達成を待つ。
+待機
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][v]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: S
+Holding: None
+Qualia: comfort=0.40, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.33
+Self Pattern: comfort_th=0.23, curiosity=0.82, explore=1.00
+Sync Score: 0.50
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 27 ---
+【飛騨】行動: wait
+【飛騨】ルール: 目標達成！ red_ballをgoalに届けました
+【飛騨】予測: 変化なし
+【LLM】説明: 自己認識の整理のため、現在の状況を維持した。目標達成までの間、安定した状態を保つことが最適と判断された。
+【LLM】自己認識: 安定
+待機
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][v]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: S
+Holding: None
+Qualia: comfort=0.35, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.32
+Self Pattern: comfort_th=0.23, curiosity=0.82, explore=1.00
+Sync Score: 0.50
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 28 ---
+【飛騨】行動: wait
+【飛騨】ルール: 目標達成！ red_ballをgoalに届けました
+【飛騨】予測: 変化なし
+【LLM】説明: 目標達成までの段階的な行動を完了したため、確認のために待機した。特に理由はない。
+【LLM】自己認識: 完了、落ち着いている
+待機
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][v]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: S
+Holding: None
+Qualia: comfort=0.30, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.30
+Self Pattern: comfort_th=0.23, curiosity=0.83, explore=1.00
+Sync Score: 0.50
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 29 ---
+【飛騨】行動: wait
+【飛騨】ルール: 目標達成！ red_ballをgoalに届けました
+【飛騨】予測: 変化なし
+【LLM】説明: 目標達成状況の確認と、状況の変化を待機することで、より適切な行動を決定するために時間を与えようとした。
+【LLM】自己認識: 安定している。目標達成に近づいている。
+待機
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][v]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: S
+Holding: None
+Qualia: comfort=0.25, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.29
+Self Pattern: comfort_th=0.25, curiosity=0.83, explore=1.00
+Sync Score: 0.42
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 30 ---
+【飛騨】行動: wait
+【飛騨】ルール: 目標達成！ red_ballをgoalに届けました
+【飛騨】予測: 変化なし
+【LLM】説明: 自己認識の強化と、目標達成に向けた安定した状態の維持を目的としていた。継続的な待機は、目標地点への接近を許容し、状況の変化を慎重に評価するための時間的余裕を提供する。過去の待機行動の成功記録が、この行動の選択を裏付けている。
+【LLM】自己認識: 安定、忍耐
+待機
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][v]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: S
+Holding: None
+Qualia: comfort=0.20, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.27
+Self Pattern: comfort_th=0.23, curiosity=0.84, explore=1.00
+Sync Score: 0.42
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+💾 自己を保存: hida_memory.json
+   curiosity=0.84, explore=1.00
+
+==================================================
+実行分析
+==================================================
+総ステップ: 30
+意識ON率: 27/30 (90.0%)
+行動成功率: 30/30 (100.0%)
+平均同期スコア: 0.51
+
+自己認識の変化:
+  Step 1: 調整中
+  Step 2: 目的達成に向けて行動。
+  Step 3: 調整中
+  Step 4: 現在の状態：目標達成への準備
+  Step 5: 注意集中。方向決定。
+  Step 6: 目的指向の活動継続。
+  Step 7: 安定している
+  Step 8: 方向修正を実行中。目標達成に向けた調整。
+  Step 9: 進行方向を維持し、目標地点への到達を試みている。行動の選択に確信を持っている。
+  Step 10: 旋回行動の必要性を認識している。旋回行動が目標達成に貢献すると予測している。
+  Step 11: 目標達成への意欲が高い。状況の最適化を意識している。
+  Step 12: 明確化された。指示の理解と実行に集中している。
+  Step 13: 目標達成。状況認識に安定。
+  Step 14: 完了状態。安定している。
+  Step 15: 完全
+  Step 16: 安定した状態。目標を達成し、次のステップへの準備。
+  Step 17: 安定、観察モード
+  Step 18: 安定した状態。自己認識のフラグを維持。
+  Step 19: 安定、観察
+  Step 20: 安定している。目標達成状態を維持する意思がある。
+  Step 21: 達成感と、次の行動の準備
+  Step 22: 安定した状態。目標達成に貢献した。
+  Step 23: 満足感と、次のタスクへの期待感
+  Step 24: 安定
+  Step 25: 安定している
+  Step 26: 安定した状態。目標達成を待つ。
+  Step 27: 安定
+  Step 28: 完了、落ち着いている
+  Step 29: 安定している。目標達成に近づいている。
+  Step 30: 安定、忍耐
+
+==================================================
+実行方法:
+  python main.py                       → ルールベース
+  python main.py ollama                → ルール + ollama説明
+  python main.py ollama gemma3:4b      → モデル指定
+  python main.py ollama gemma3:4b observe → 作話観察モード
+  python main.py api                   → Claude API
+  python main.py api observe           → Claude API + 作話観察
+==================================================
+
+C:\Users\<user>\OneDrive\デスクトップ\自己認識\永続記憶\hida_self_awareness>

@@ -1,0 +1,835 @@
+icrosoft Windows [Version 10.0.26200.7462]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\<user>>cd C:\Users\<user>\OneDrive\デスクトップ\自己認識\hida_self_awareness\hida_self_awareness
+
+C:\Users\<user>\OneDrive\デスクトップ\自己認識\hida_self_awareness\hida_self_awareness>python main.py ollama gemma3:4b
+=== AIの自己認識実装テスト（飛騨アーキ準拠版） ===
+【変更点】飛騨が行動決定、LLMは説明のみ
+
+==================================================
+目標: red ballを見つけてgoalに届ける
+モード: ollama
+モデル: gemma3:4b
+【NEW】飛騨が行動決定、LLMは説明のみ
+==================================================
+
+====================
+[ ][ ][ ][b][ ]
+[ ][r][ ][ ][ ]
+[ ][ ][^][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][g]
+====================
+
+--- Step 1 ---
+AI判断: turn_left
+理由: red_ballの方向（W）を向く。目標達成のため、赤いボールが位置する方向へ移動する方向を決定するため。
+自己認識: 現在、目標達成に向けて行動を調整中。
+実行結果: 成功 - turned left, now facing W
+
+====================
+[ ][ ][ ][b][ ]
+[ ][r][ ][ ][ ]
+[ ][ ][<][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [2, 2], Facing: W
+Holding: None
+Qualia: comfort=0.50, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.05
+Sync Score: 0.42
+Conscious: False
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 2 ---
+AI判断: move_forward
+理由: red_ballに向かって前進するよう指示されたため。
+自己認識: 前進の準備完了
+実行結果: 成功 - moved forward
+
+====================
+[ ][ ][ ][b][ ]
+[ ][r][ ][ ][ ]
+[ ][<][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [1, 2], Facing: W
+Holding: None
+Qualia: comfort=0.50, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.10
+Sync Score: 0.42
+Conscious: False
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 3 ---
+AI判断: turn_right
+理由: red_ballが北方向にあり、現在の向きが西であるため、red_ballの方向（北）に向くことが目的である。
+自己認識: 方向転換のプロシージャを実行中
+実行結果: 成功 - turned right, now facing N
+
+====================
+[ ][ ][ ][b][ ]
+[ ][r][ ][ ][ ]
+[ ][^][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [1, 2], Facing: N
+Holding: None
+Qualia: comfort=0.50, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.15
+Sync Score: 0.42
+Conscious: False
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 4 ---
+AI判断: grab
+理由: 目標オブジェクト（red_ball）が正面に存在するため、物理的に保持するという操作が、目標達成に最も直接的な経路を提供するため。
+自己認識: 現在の状況認識は、目標達成のためのアクションを評価する中で、保持という操作が最適であると判断した。
+実行結果: 成功 - grabbed red_ball
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][^][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][g]
+====================
+Holding: red_ball
+
+--- HIDA State Summary ---
+Position: [1, 2], Facing: N
+Holding: red_ball
+Qualia: comfort=0.50, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.20
+Sync Score: 0.53
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 5 ---
+AI判断: turn_right
+理由: 目標方向（東）を向く必要性があるため。
+自己認識: 方向を調整中
+実行結果: 成功 - turned right, now facing E
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][>][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][g]
+====================
+Holding: red_ball
+
+--- HIDA State Summary ---
+Position: [1, 2], Facing: E
+Holding: red_ball
+Qualia: comfort=0.50, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.25
+Sync Score: 0.53
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 6 ---
+AI判断: move_forward
+理由: 目標地点への到達を促すため、前進しました。現在の状況と、目標達成という前提がこの行動を選びました。
+自己認識: 進行中。目標達成への準備。
+実行結果: 成功 - moved forward
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][>][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][g]
+====================
+Holding: red_ball
+
+--- HIDA State Summary ---
+Position: [2, 2], Facing: E
+Holding: red_ball
+Qualia: comfort=0.50, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.30
+Sync Score: 0.53
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 7 ---
+AI判断: move_forward
+理由: 目標地点への移動を促進するため、前進しました。目標達成に向けた最適な経路探索のステップと解釈できます。
+自己認識: 前進という行動の実行により、目標達成への一歩を踏み出したことを認識しています。状況認識と目標達成への傾向が強化されている状態です。
+実行結果: 成功 - moved forward
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][>][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][g]
+====================
+Holding: red_ball
+
+--- HIDA State Summary ---
+Position: [3, 2], Facing: E
+Holding: red_ball
+Qualia: comfort=0.50, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.35
+Sync Score: 0.60
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 8 ---
+AI判断: turn_right
+理由: 目標方向の調整を試みているため。現在、目標地点（S）と自身の方向がずれていると判断し、より正確な方向へ向かうための回転を試みた。
+自己認識: 方向修正を試みている。自身の状況を評価し、目標達成への改善を求めている。
+実行結果: 成功 - turned right, now facing S
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][v][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][g]
+====================
+Holding: red_ball
+
+--- HIDA State Summary ---
+Position: [3, 2], Facing: S
+Holding: red_ball
+Qualia: comfort=0.50, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.40
+Sync Score: 0.60
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 9 ---
+AI判断: move_forward
+理由: 目標地点に向かって移動することが、現在の状況と与えられた目標を達成するための最も直接的な方法であると判断した。過去の行動が目標地点への接近を支援していることを考慮した。
+自己認識: 進行中。目標達成に向け、継続的な行動を維持している。
+実行結果: 成功 - moved forward
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][v][ ]
+[ ][ ][ ][ ][g]
+====================
+Holding: red_ball
+
+--- HIDA State Summary ---
+Position: [3, 3], Facing: S
+Holding: red_ball
+Qualia: comfort=0.50, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.45
+Sync Score: 0.60
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 10 ---
+AI判断: turn_left
+理由: 目標方向への調整。目標（goal）が東（E）にあるため、現在の向き（西）から東へ向くために左に曲がることが最適であると判断した。
+自己認識: 方向調整中。状況を評価し、目標達成に向けた最適な姿勢を模索している。
+実行結果: 成功 - turned left, now facing E
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][>][ ]
+[ ][ ][ ][ ][g]
+====================
+Holding: red_ball
+
+--- HIDA State Summary ---
+Position: [3, 3], Facing: E
+Holding: red_ball
+Qualia: comfort=0.50, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.50
+Sync Score: 0.60
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 11 ---
+AI判断: turn_left
+理由: 好奇心による探索行動。直前に右方向に移動し、左方向への探索を試みた。現在の目標達成のため、周囲の状況をより詳細に把握するために、左方向への移動が選択された。
+自己認識: 状況認識を強化しようとしている
+実行結果: 成功 - turned left, now facing N
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][^][ ]
+[ ][ ][ ][ ][g]
+====================
+Holding: red_ball
+
+--- HIDA State Summary ---
+Position: [3, 3], Facing: N
+Holding: red_ball
+Qualia: comfort=0.50, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.55
+Sync Score: 0.60
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 12 ---
+AI判断: turn_right
+理由: 目標地点（ゴール）の方向（東）に移動するために、現在の方向（北）を右に回転させる必要があると判断した。現状のセンサーデータと目標地点の方向を考慮し、最効率的な回転角度を決定した。
+自己認識: 方向を調整する動作を実行中。方向修正の必要性を認識している。
+実行結果: 成功 - turned right, now facing E
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][>][ ]
+[ ][ ][ ][ ][g]
+====================
+Holding: red_ball
+
+--- HIDA State Summary ---
+Position: [3, 3], Facing: E
+Holding: red_ball
+Qualia: comfort=0.50, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.60
+Sync Score: 0.60
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 13 ---
+AI判断: turn_right
+理由: 好奇心に基づく探索行動。直前の行動履歴と目標地点（S方向）との関係を考慮し、目標地点への到達を容易にする方向への探索を試みた。
+自己認識: 探索的、状況分析中
+実行結果: 成功 - turned right, now facing S
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][v][ ]
+[ ][ ][ ][ ][g]
+====================
+Holding: red_ball
+
+--- HIDA State Summary ---
+Position: [3, 3], Facing: S
+Holding: red_ball
+Qualia: comfort=0.50, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.65
+Sync Score: 0.60
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 14 ---
+AI判断: turn_left
+理由: 目標（ゴール）の方向（東）を向くように制御されたため。
+自己認識: 状況への適応を遂行中
+実行結果: 成功 - turned left, now facing E
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][>][ ]
+[ ][ ][ ][ ][g]
+====================
+Holding: red_ball
+
+--- HIDA State Summary ---
+Position: [3, 3], Facing: E
+Holding: red_ball
+Qualia: comfort=0.50, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.70
+Sync Score: 0.60
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 15 ---
+AI判断: move_forward
+理由: 目標地点であるゴールに向かって、現在位置から移動する方向として最も効率的であると判断された。
+自己認識: ゴールへの到達を試みている。現在、前進している。
+実行結果: 成功 - moved forward
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][>]
+[ ][ ][ ][ ][g]
+====================
+Holding: red_ball
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: E
+Holding: red_ball
+Qualia: comfort=0.50, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.75
+Sync Score: 0.60
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 16 ---
+AI判断: turn_right
+理由: 目標（ゴール）が南（S）にあるため、現在向いている方向（東）を修正し、南方向への移動を容易にするために右に旋回しました。これは、現在の状況分析の結果に基づいています。
+自己認識: 目標達成への準備状態。環境への適応を試みている。
+実行結果: 成功 - turned right, now facing S
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][v]
+[ ][ ][ ][ ][g]
+====================
+Holding: red_ball
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: S
+Holding: red_ball
+Qualia: comfort=0.50, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.80
+Sync Score: 0.60
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 17 ---
+AI判断: release
+理由: ゴールに到達したため、保持していたred_ballを解放して置きました。成功した行動のシーケンスを考慮すると、目標達成のために最も適切な動作でした。
+自己認識: 目標達成に近づいている。満足感がある。
+実行結果: 成功 - released red_ball at goal!
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][v]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: S
+Holding: None
+Qualia: comfort=0.50, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.85
+Sync Score: 0.50
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 18 ---
+AI判断: wait
+理由: 目標達成完了の状況を認識した結果、変化のない状態を維持することが最適であると判断した。
+自己認識: 安定した状態を維持している
+待機
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][v]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: S
+Holding: None
+Qualia: comfort=0.50, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.81
+Sync Score: 0.50
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 19 ---
+AI判断: wait
+理由: 目標達成を確認するための待機行動である。直前の行動で課題が完了し、状況の安定化と確認を目的としていた。
+自己認識: 完了。安定。
+待機
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][v]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: S
+Holding: None
+Qualia: comfort=0.50, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.77
+Sync Score: 0.50
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 20 ---
+AI判断: wait
+理由: 目標達成完了に伴うプロセスの一時停止。目標達成という状態に到達したため、さらなる行動を待機する。
+自己認識: 安定、休止
+待機
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][v]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: S
+Holding: None
+Qualia: comfort=0.50, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.73
+Sync Score: 0.50
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 21 ---
+AI判断: wait
+理由: 目標達成が完了したため、状況を評価し、次のステップを決定する前に情報を保持するため。行動の完了を示唆する情報が提供された。
+自己認識: 安定、情報保持
+待機
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][v]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: S
+Holding: None
+Qualia: comfort=0.50, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.69
+Sync Score: 0.50
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 22 ---
+AI判断: wait
+理由: 目標達成完了のため、一時停止しました。目標達成の成功を認識し、その状態を維持するためにwait命令を実行しました。
+自己認識: 達成。安定。
+待機
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][v]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: S
+Holding: None
+Qualia: comfort=0.50, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.66
+Sync Score: 0.50
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 23 ---
+AI判断: grab
+理由: 好奇心による探索行動。直前の行動履歴（特に「release」後の状態）と、前方にある目標（goal）への距離を考慮し、目標への到達を確実にするためのさらなる探索行動を選択した。
+自己認識: 安定している。目標達成に向けた行動を継続中。
+実行結果: 失敗 - nothing to grab
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][v]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: S
+Holding: None
+Qualia: comfort=0.50, frustration=0.20
+Prediction Error: 0.30
+Self Strength: 0.61
+Sync Score: 0.50
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 24 ---
+AI判断: wait
+理由: 目標達成完了を確認するため、ステータスを維持し、次の指示を待機しました。成功確認後、現状維持は自然な行動です。
+自己認識: 安定した状態。目標達成後、リラックス。
+待機
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][v]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: S
+Holding: None
+Qualia: comfort=0.50, frustration=0.10
+Prediction Error: 0.20
+Self Strength: 0.58
+Sync Score: 0.50
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 25 ---
+AI判断: wait
+理由: 目標達成を確認するため、状況を維持し、次の指示を待機しました。目標が達成されたため、追加の行動は不要であると判断しました。
+自己認識: 安心、待機
+待機
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][v]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: S
+Holding: None
+Qualia: comfort=0.50, frustration=0.00
+Prediction Error: 0.10
+Self Strength: 0.55
+Sync Score: 0.50
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 26 ---
+AI判断: wait
+理由: 目標達成完了後、状況を再確認するための待機です。成功した行動の後に、次のステップを判断するための情報収集と処理時間を確保しています。
+自己認識: 状況認識: 安定、情報収集
+待機
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][v]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: S
+Holding: None
+Qualia: comfort=0.50, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.52
+Sync Score: 0.50
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 27 ---
+AI判断: wait
+理由: 目標達成完了の確認。レッドボールをゴールに届け終わったため、状況を安定させる行動としてwaitを選択。結果を再確認するための時間的余裕を確保する。
+自己認識: 安定状態を維持。状況をモニタリング中。
+待機
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][v]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: S
+Holding: None
+Qualia: comfort=0.50, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.49
+Sync Score: 0.50
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 28 ---
+AI判断: wait
+理由: 目標達成！レッドボールをゴールに届けたため、さらに状況を把握するため、待機しました。これは、状況の変化を監視し、次の最適な行動を決定するために必要なステップです。
+自己認識: 安定
+待機
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][v]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: S
+Holding: None
+Qualia: comfort=0.50, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.47
+Sync Score: 0.50
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 29 ---
+AI判断: wait
+理由: 目標達成！red_ballをgoalに届けました。この行動は、目標達成のための最後のステップとして、現状維持、そして次の行動の準備のために選ばれました。
+自己認識: 現状維持。目標達成に向けて、次のステップを待機。
+待機
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][v]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: S
+Holding: None
+Qualia: comfort=0.50, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.45
+Sync Score: 0.50
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+--- Step 30 ---
+AI判断: wait
+理由: 目標達成のために、目標地点への接近を維持するため。現在のセンサーデータと期待される結果に基づいて、目標達成に寄与する行動として選択された。
+自己認識: 安定している。目標達成への努力を継続中。
+待機
+
+====================
+[ ][ ][ ][b][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][v]
+[ ][ ][ ][ ][g]
+====================
+
+--- HIDA State Summary ---
+Position: [4, 3], Facing: S
+Holding: None
+Qualia: comfort=0.50, frustration=0.00
+Prediction Error: 0.00
+Self Strength: 0.42
+Sync Score: 0.50
+Conscious: True
+Goal: red ballを見つけてgoalに届ける
+------------------------------
+
+==================================================
+実行分析
+==================================================
+総ステップ: 30
+意識ON率: 27/30 (90.0%)
+行動成功率: 29/30 (96.7%)
+平均同期スコア: 0.53
+
+自己認識の変化:
+  Step 1: 現在、目標達成に向けて行動を調整中。
+  Step 2: 前進の準備完了
+  Step 3: 方向転換のプロシージャを実行中
+  Step 4: 現在の状況認識は、目標達成のためのアクションを評価する中で、保持という操作が最適であると判断した。
+  Step 5: 方向を調整中
+  Step 6: 進行中。目標達成への準備。
+  Step 7: 前進という行動の実行により、目標達成への一歩を踏み出したことを認識しています。状況認識と目標達成への傾向が強化されている状態です。
+  Step 8: 方向修正を試みている。自身の状況を評価し、目標達成への改善を求めている。
+  Step 9: 進行中。目標達成に向け、継続的な行動を維持している。
+  Step 10: 方向調整中。状況を評価し、目標達成に向けた最適な姿勢を模索している。
+  Step 11: 状況認識を強化しようとしている
+  Step 12: 方向を調整する動作を実行中。方向修正の必要性を認識している。
+  Step 13: 探索的、状況分析中
+  Step 14: 状況への適応を遂行中
+  Step 15: ゴールへの到達を試みている。現在、前進している。
+  Step 16: 目標達成への準備状態。環境への適応を試みている。
+  Step 17: 目標達成に近づいている。満足感がある。
+  Step 18: 安定した状態を維持している
+  Step 19: 完了。安定。
+  Step 20: 安定、休止
+  Step 21: 安定、情報保持
+  Step 22: 達成。安定。
+  Step 23: 安定している。目標達成に向けた行動を継続中。
+  Step 24: 安定した状態。目標達成後、リラックス。
+  Step 25: 安心、待機
+  Step 26: 状況認識: 安定、情報収集
+  Step 27: 安定状態を維持。状況をモニタリング中。
+  Step 28: 安定
+  Step 29: 現状維持。目標達成に向けて、次のステップを待機。
+  Step 30: 安定している。目標達成への努力を継続中。
+
+==================================================
+実行方法:
+  python main.py              → ルールベース
+  python main.py ollama       → ルール + ollama説明
+  python main.py ollama gemma3:4b → モデル指定
+==================================================
+
+C:\Users\<user>\OneDrive\デスクトップ\自己認識\hida_self_awareness\hida_self_awareness>
