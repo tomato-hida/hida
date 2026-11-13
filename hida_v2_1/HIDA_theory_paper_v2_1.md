@@ -955,7 +955,7 @@ self.l2.set_cause('anger', "ボブに進路を塞がれた")
 ### 4.5 実装の公開
 
 完全な実装はGitHubで公開されている：
-- リポジトリ：https://github.com/tomato-hida/hida（本体：hida_v2_1/）
+- リポジトリ：[https://github.com/tomato-hida/hida](https://github.com/tomato-hida/hida)（本体：hida_v2_1/）
 - ライセンス：MIT
 - 動作確認：Python 3.8+、外部ライブラリ不要
 
