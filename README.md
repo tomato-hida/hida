@@ -8,6 +8,8 @@
 
 [English README](README_en.md)
 
+> **2026年11月25日：** 実装の最新版は [`hida_v2_2/`](hida_v2_2/) です（[何が変わったか](hida_v2_2/CHANGELOG_v2_2.md)）。主導層の決め方を変え、L1（身体）を主導層の候補から外しました。この README の以下の説明と出力例は v2.1（`hida_v2_1/`）のものです。v2.1 のフォルダと論文はそのまま残してあります。
+
 📚 **[論文 v2.1](hida_v2_1/HIDA_theory_paper_v2_1.md)** | [論文 v2.0（過去の版）](docs/theory/HIDA_theory_paper_v2_0.md) | **[AI向け仕様書](docs/theory/spec_v2.md)**
 
 > **「意識なんて分からん、じゃあ実装してみよう」**  
@@ -194,7 +196,8 @@ python experiments/02_phases/phase5_consciousness.py --compare
 
 | ファイル | 内容 |
 |---|---|
-| `hida_v2_1/hida_unified_v2.py` | **v2.0統合版（メイン）** |
+| `hida_v2_2/hida_unified_v2_2.py` | **v2.2 の本体（最新）** |
+| `hida_v2_1/hida_unified_v2.py` | v2.1 の本体（論文 v2.1 に対応） |
 | `experiments/02_phases/phase1_minimal.py` | 最小構成での動作確認 |
 | `experiments/02_phases/phase2_qualia_expansion.py` | クオリア数を増やした場合の閾値変化 |
 | `experiments/02_phases/phase3_dna_and_learning.py` | DNA初期値による振る舞いの変化 |
